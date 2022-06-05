@@ -166,6 +166,15 @@
           <label class="title">简易工具包</label>
           <div class="section-content">
             <div
+              class="item"
+              id="babylon"
+              data-tooltip="babylon试炼场"
+              data-position="left center"
+              data-inverted=""
+            >
+              BabylonPlayground
+            </div>
+            <div
               data-tooltip="响应式检测是否为移动端"
               class="item"
               id="mob-spy"
@@ -228,6 +237,11 @@
 
         nav.onmouseleave = () => {
           nav.style.display = "none";
+        };
+
+        const babylon = document.getElementById("babylon");
+        babylon.onclick = () => {
+          window.open("https://jerenyaoyelu.github.io/babylonplayground");
         };
 
         const whichua = document.getElementById("whichua");
